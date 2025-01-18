@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* shared styles */
+.text-primary {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.text-secondary {
+  font-family: "Inter", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.title {
+  color: rgb(58, 58, 58);
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  /* line-height: 40px; */
+  letter-spacing: 0%;
+}
+.para {
+  color: rgb(120, 120, 133);
+  font-family: "Inter", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 143%;
+  letter-spacing: 1.8%;
+}
+.btn-primary {
+  border-radius: 41px;
+  padding: 10px 24px;
+  background: rgb(224, 44, 109);
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  font-family: "Poppins", serif;
+}
+body {
+  max-width: 1440px;
+  margin: 50px auto;
+}
+/*navbar related styles start  */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar h1 {
+  color: rgb(58, 58, 58);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.navbar ul {
+  display: flex;
+  gap: 34px;
+  list-style: none;
+}
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(58, 58, 58);
+}
+/* navbar related styles end  */
+
+/* header related styles  */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 300px;
+}
+.header-details {
+  max-width: 580px;
+  text-align: left;
+}
+.header-details h1 {
+  font-size: 52px;
+  margin-bottom: 16px;
+}
+.header-details p {
+  margin-bottom: 16px;
+}
+.main-camera {
+  background-image: url("images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 80px;
+}
+.main-camera img {
+  width: 400px;
+  height: 400px;
+}
+/* header related styles end */
+
+/* sponsors related styles start  */
+.sponsors {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 30px 25px;
+  margin-top: 80px;
+  background: linear-gradient(
+    135deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.378%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+}
+.sponsors img {
+  width: 84px;
+  height: 26px;
+}
+
+/* mobile responsive for smaller device  */
+@media screen and (max-width: 576px) {
+  .navbar,
+  .sponsors {
+    flex-direction: column;
+  }
+
+  .sponsors {
+    margin-top: 10px;
+  }
+  .sponsors img {
+    width: 100%;
+  }
+  .icon {
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
+  .header-details {
+    text-align: center;
+  }
+}
