@@ -123,14 +123,73 @@ body {
   height: 26px;
 }
 
+.popular h1 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.popular-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+    margin: 0 auto;
+}
+/* .card img{
+    max-width: 300px;
+} */
+.card {
+  text-align: left;
+  max-width: 329px;
+  padding: 17px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+}
+.card h2 {
+  color: rgb(24, 25, 31);
+  font-family: "Poppins", serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.card h3 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Inter", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.card h6 {
+  font-family: "Inter", serif;
+  color: rgb(94, 99, 102);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+.rating {
+  color: rgb(251, 130, 0);
+}
+.card img {
+  width: 100%;
+}
+
 /* mobile responsive for smaller device  */
 @media screen and (max-width: 576px) {
-  .navbar,
-  .sponsors {
+  .navbar {
     flex-direction: column;
   }
 
   .sponsors {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
     margin-top: 10px;
   }
   .sponsors img {
@@ -146,5 +205,8 @@ body {
   }
   .header-details {
     text-align: center;
+  }
+  .popular-cards{
+    grid-template-columns: repeat(1, 1fr);
   }
 }
