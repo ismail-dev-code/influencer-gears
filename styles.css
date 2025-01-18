@@ -230,6 +230,44 @@ margin-bottom: 16px;
 #featured-btn{
   border-radius: 0;
 }
+footer {
+  background-color: black;
+  color: white;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  max-width: none;
+  padding: 50px;
+ 
+}
+footer h2{
+  color: rgb(255, 255, 255);
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: 0px;
+margin-bottom: 5px;
+}
+footer p{
+  color: rgb(217, 219, 225);
+font-size: 14px;
+font-weight: 700;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+margin-bottom: 15px;
+}
+footer ul{
+  justify-content: center;
+  list-style: none;
+  display: flex;
+}
+footer ul li{
+  margin-right: 15px;
+}
+
 /* mobile responsive for smaller device  */
 @media screen and (max-width: 576px) {
   .navbar {
@@ -281,5 +319,8 @@ margin-bottom: 16px;
   }
   .featured-details p{
     text-align: center;
+  }
+  footer{
+    margin-top: 15px;
   }
 }
