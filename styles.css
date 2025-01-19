@@ -48,7 +48,11 @@
   cursor: pointer;
   opacity: 0.9;
 }
-body {
+header{
+  max-width: 1240px;
+  margin: 50px auto;
+}
+main{
   max-width: 1240px;
   margin: 50px auto;
 }
